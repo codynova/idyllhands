@@ -1,0 +1,247 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Sabon Roman';
+    src: url('fonts/sabon-roman.woff') format('woff'),
+         url('fonts/sabon-roman.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sabon Italic';
+    src: url('fonts/sabon-italic.woff') format('woff'),
+         url('fonts/sabon-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Effra Heavy';
+    src: url('fonts/effra-heavy.woff') format('woff'),
+         url('fonts/effra-heavy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Effra Regular';
+    src: url('fonts/effra-regular.woff') format('woff'),
+         url('fonts/effra-regular.ttf') format('truetype');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    background: #fdf2e0;
+    user-select: none;
+    font-family: serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+    background-image: url('images/parchment-pattern.jpg');
+    background-repeat: repeat;
+    opacity: 0.8;
+}
+
+.color-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+    background: #fdf2e0;
+    opacity: 0.8;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: #ddab24;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Sabon Italic", serif;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-align: center;
+    text-transform: lowercase;
+    letter-spacing: -2px;
+    color: #73675c;
+}
+
+h2 span {
+    letter-spacing: -3px;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    width: 380px;
+    max-width: 85vw;
+    margin: 2rem auto;
+    transform: rotateZ(-1deg);
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.35);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    color: #8c7b6c;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+p {
+    display: block;
+    width: calc(100% - 2.65rem);
+    padding: 0.725rem 1.325rem;
+    font-size: 1rem;
+    line-height: 1.825rem;
+    font-family: "Sabon Roman", sans;
+    letter-spacing: 1px;
+}
+
+em {
+    font-family: "Sabon Italic", sans;
+}
+
+form {
+    width: 100%;
+}
+
+input[type="email"] {
+    width: calc(100% - 3rem);
+    max-width: 280px;
+    padding: 0.5rem 0.5rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    border: 1px solid #8c7b6c;
+    font-family: "Sabon Roman", sans;
+    outline: none;
+}
+
+input[type="hidden"] {
+    display: none;
+}
+
+button[type="submit"] {
+    padding: 0.65rem 1.5rem;
+    margin: 1rem auto 0 auto;
+    background: #8c7b6c;
+    border: 1px solid #8c7b6c;
+    color: #fdf2e0;
+    font-family: "Effra Heavy", sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+::placeholder,
+::-webkit-input-placeholder
+:-ms-input-placeholder,
+::-ms-input-placeholder
+:-moz-placeholder,
+::-moz-placeholder {
+    color: red;
+}
+
+footer {
+    max-width: calc(100% - 1.6rem);
+    margin: 1rem auto;
+    text-align: center;
+    color: #8c7b6c;
+    font-family: "Sabon Italic", sans;
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+@media screen and (min-device-width: 768px) {
+    .logo {
+        width: 480px;
+        margin: 4rem auto;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    section {
+        margin: 1.5rem auto;
+    }
+
+    p {
+        padding: 0.725rem 2rem;
+        font-size: 1.325rem;
+        line-height: 2.325rem;
+    }
+
+    input[type="email"] {
+        font-size: 1.25rem;
+        margin: 0 0.625rem 0 auto;
+    }
+
+    button[type="submit"] {
+        position: relative;
+        margin: 1rem 0.625rem 1rem auto;
+        bottom: 1px;
+    }
+
+    .hide-768 {
+        display: none;
+    }
+}
