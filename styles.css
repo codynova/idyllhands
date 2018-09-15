@@ -201,6 +201,22 @@ button[type="submit"] {
     color: red;
 }
 
+.custom-work {
+    display: block;
+    width: calc(100% - 2rem);
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.email-address {
+    display: block;
+    width: calc(100% - 2rem);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 .gallery {
     list-style: none;
     display: flex;
@@ -269,6 +285,7 @@ footer {
     }
 
     p {
+        width: calc(100% - 4rem);
         padding: 0.725rem 2rem;
         font-size: 1.325rem;
         line-height: 2.325rem;
