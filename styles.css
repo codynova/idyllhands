@@ -189,6 +189,7 @@ button[type="submit"] {
     font-family: "Effra Heavy", sans-serif;
     font-size: 0.9rem;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 ::placeholder,
@@ -237,6 +238,10 @@ button[type="submit"] {
 
 .gallery li img {
     display: block;
+}
+
+.no-underline {
+    text-decoration: none;
 }
 
 footer {
